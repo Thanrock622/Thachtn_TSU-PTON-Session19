@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./Assignment3.css" />
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email address" />
+                <small class="error error-email"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <div class="password-wrapper">
+                    <input type="password" id="password" placeholder="Enter your password" />
+                    <button type="button" id="togglePassword" class="toggle-btn">👁️</button>
+                </div>
+                <small class="error error-password"></small>
+            </div>
+
+            <div class="form-group remember">
+                <input type="checkbox" id="remember" />
+                <label for="remember">Ghi nhớ tài khoản (24h)</label>
+            </div>
+
+            <button type="submit" class="btn-login">Login</button>
+        </form>
+
+        <div class="links">
+            <a href="#">Forgot password?</a>
+            <span>or</span>
+            <a href="#">SignUp</a>
+        </div>
+    </div>
+    <script src="./Assignment3.js"></script>
+</body>
+</html>
